@@ -77,18 +77,17 @@ int main()
             str4 += "+";
             str4 += str2[i];
         }
-        else if((str1[i] = str3[a]) && (str2[i] = str3[a]))
+        else if((str1[i] == str3[a]) && (str2[i] == str3[a]))
         {
-            str4 += " ";
             ++a;
             str4 += "|";
         }
-        else if ((str1[i] != str3[a]) && (str2[i] = str3[a]))
+        else if ((str1[i] != str3[a]) && (str2[i] == str3[a]))
         {
             str4 += "-";
             str4 += str1[i];
         }
-        else if ((str1[i] = str3[a]) && (str2[i] != str3[a]))
+        else if ((str1[i] == str3[a]) && (str2[i] != str3[a]))
         {
             str4 += "+";
             str4 += str2[i];
